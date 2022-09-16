@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".materialrequest_getnewjob"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Login Screen"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:layout_marginEnd="-15dp"-->
+        <!--            android:contentDescription="logo"-->
+        <!--            android:rotation="180"-->
+        <!--            android:src="@drawable/download" />-->
+        <!--&lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="Login"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="Please sign in to continue."
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/Login_LoginID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/textviewbg"
+            android:ems="10"
+            android:hint="Enter your email...."
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/Login_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:autofillHints="password"
+            android:background="@drawable/textviewbg"
+            android:ems="10"
+            android:hint="Enter your password...."
+            android:inputType="textPassword"
+            android:minHeight="48dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/Login_LoginBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/black"
+            android:text="login" />
+
+    </LinearLayout>
+</LinearLayout>

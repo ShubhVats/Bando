@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wms_extended">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WMS_extended"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Line2Dispatch_MaterialPick_2"
+            android:exported="false" />
+        <activity
+            android:name=".Line2Dispatch_ScanBarcode_1"
+            android:exported="false" />
+        <activity
+            android:name=".FIFOInward_StoreMaterial_3"
+            android:exported="false" />
+        <activity
+            android:name=".FIFOInward_StoreBelt_2"
+            android:exported="false" />
+        <activity
+            android:name=".FIFOInward_ScanLot_1"
+            android:exported="false" />
+        <activity
+            android:name=".HoldMaterial_1"
+            android:exported="false" />
+        <activity
+            android:name=".RetriveMaterial_Handover_4"
+            android:exported="false" />
+        <activity
+            android:name=".RetriveMaterial_PutPallet_3"
+            android:exported="false" />
+        <activity
+            android:name=".RetriveMaterial_PickMaterial_2"
+            android:exported="false" />
+        <activity
+            android:name=".RetriveMaterial_GetNewJob_1"
+            android:exported="false" />
+        <activity
+            android:name=".barcode_scanning_locationID"
+            android:exported="false" />
+        <activity
+            android:name=".StoreMaterial_Store_"
+            android:exported="false" />
+        <activity
+            android:name=".barcode_scanning"
+            android:exported="false" />
+        <activity
+            android:name=".materialstore_scanbarcode"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false"
+            android:noHistory="true"
+            android:excludeFromRecents="true"/>
+        <activity
+            android:name=".matrequest_managment"
+            android:exported="false" />
+        <activity
+            android:name=".materialrequest_confirmmatrialdelivery_screen3"
+            android:exported="false" />
+        <activity
+            android:name=".matrialreuest_scanbarcode_screen2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
